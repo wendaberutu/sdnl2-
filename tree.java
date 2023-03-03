@@ -1,5 +1,4 @@
 package pohonBinary;
-
 import java.util.LinkedList;
 import java.util.Queue;
 
@@ -88,8 +87,11 @@ public class tree {
             preOrder(localRoot.getKanan());
         }
     }
-
-    public void inOrder(treeNode localRoot) {
+  public void inorder(){
+      inOrder(this.root);
+  }
+    
+  private   public void inOrder(treeNode localRoot) {
         if (localRoot != null) {
             inOrder(localRoot.kiri);
             System.out.println(localRoot.key + " ");
